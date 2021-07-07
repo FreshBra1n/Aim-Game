@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #e5e5e5;
+    display: flex;
+    padding-top: 5rem;
+    justify-content: center;
+    overflow: hidden;
+    margin: 0;
+    background-image: url('https://images.unsplash.com/photo-1500964757637-c85e8a162699?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1978&q=80');
+}
+
+.row {
+    display: flex;
+    width: 600px;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.col-header {
+    width: 150px;
+    box-shadow: 4px 4px 9px rgba(198, 198, 198, 0.36);
+    border-radius: 20px;
+    padding: 0.8rem 1rem;
+    color: #fff;
+}
+
+.item {
+    width: 150px;
+    height: 66px;
+    border: 1px solid #eee;
+    box-shadow: 4px 4px 9px rgba(198, 198, 198, 0.36);
+    border-radius: 20px;
+    background: #f7f6f7;
+    padding: 0.8rem 1rem;
+    color: #828282;
+    text-align: center;
+    cursor: grab;
+}
+
+.item:active {
+    cursor: grabbing;
+}
+
+.placeholder {
+    width: 150px;
+    height: 66px;
+}
+
+.start {
+    background: linear-gradient(90deg, rgba(255, 152, 0, 1) 0%, rgba(205, 220, 57, 1) 50%, rgba(0, 150, 136, 1) 100%);
+}
+
+.progress {
+    background: linear-gradient(90deg, rgba(139, 195, 74, 1) 0%, rgba(33, 150, 243, 1) 100%);
+}
+
+.done {
+    background: linear-gradient(90deg, rgba(103, 58, 183, 1) 0%, rgba(255, 235, 59, 1) 100%);
+}
+
+.hold {
+    border: 2px solid #2aebc1;
+}
+
+.hide {
+    display: none;
+}
+
+.hovered {
+    border-top: 2px solid rgba(5, 180, 93, 0.685);
+}
